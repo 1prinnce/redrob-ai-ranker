@@ -1,0 +1,51 @@
+team_name: "NA"
+
+primary_contact:
+  name: "Prince Yadav"
+  email: "yadavprinnce@outlook.com"
+  phone: "7499205762"
+
+team_members:
+  - name: "Prince Yadav"
+    email: "yadavprinnce@outlook.com"
+    role: "Student"
+
+github_repo: "GITHUB_REPO_HERE"
+
+sandbox_link: "SANDBOX_LINK_HERE"
+
+reproduce_command: "python -m src.pipeline.rank --artifacts artifacts --jd dataset/job_description.docx --out outputs/submission.csv"
+
+compute:
+  platform: "Windows 11 Local Machine"
+  cpu_cores: 4
+  ram_gb: 16
+  python_version: "3.13.5"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: true
+  pre_computation_time_minutes: 180
+
+ai_tools_used:
+  - "ChatGPT"
+  - "Claude"
+  - "Cursor"
+
+ai_usage_summary: |
+  Used ChatGPT, Claude, and Cursor for code development, review, and debugging.
+  No candidate data was fed to any LLM.
+
+methodology_summary: |
+  The pipeline performs candidate validation, feature generation, embedding
+  generation, FAISS retrieval, ranking, score normalization, and submission
+  generation. Artifacts produced include candidate_embeddings.npy,
+  candidate_features.npz, candidate_meta.pkl, faiss.index, prep_manifest.json,
+  and outputs/submission.csv. The submission passed the official validator.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
