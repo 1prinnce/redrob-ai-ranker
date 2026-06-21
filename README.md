@@ -112,3 +112,16 @@ python dataset\validate_submission.py outputs\submission.csv
 - There are no test files in the `tests` directory in this workspace.
 - The code does not include benchmark results or measured ranking-quality metrics.
 - Candidate validation in `src/data/validator.py` checks required top-level keys only; it does not enforce the full `dataset/candidate_schema.json` schema.
+
+## Quick Start
+
+git clone https://github.com/1prinnce/redrob-ai-ranker.git
+cd redrob-ai-ranker
+
+pip install -r requirements.txt
+
+python -m src.pipeline.prep --candidates dataset/candidates.jsonl --out artifacts
+
+python -m src.pipeline.rank --artifacts artifacts --jd dataset/job_description.docx --out outputs/submission.csv
+
+python dataset/validate_submission.py outputs/submission.csv
