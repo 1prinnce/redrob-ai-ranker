@@ -1,4 +1,4 @@
-team_name: "NA"
+team_name: "Prince Yadav"
 
 primary_contact:
   name: "Prince Yadav"
@@ -10,9 +10,9 @@ team_members:
     email: "yadavprinnce@outlook.com"
     role: "Student"
 
-github_repo: "GITHUB_REPO_HERE"
+github_repo: "https://github.com/1prinnce/redrob-ai-ranker"
 
-sandbox_link: "SANDBOX_LINK_HERE"
+sandbox_link: "https://colab.research.google.com/drive/1LJ7c1xnAnSIotgHaqUJ6_boPJkTB6LAy?usp=sharing"
 
 reproduce_command: "python -m src.pipeline.rank --artifacts artifacts --jd dataset/job_description.docx --out outputs/submission.csv"
 
@@ -33,8 +33,10 @@ ai_tools_used:
   - "Cursor"
 
 ai_usage_summary: |
-  Used ChatGPT, Claude, and Cursor for code development, review, and debugging.
-  No candidate data was fed to any LLM.
+  Used ChatGPT, Claude, and Cursor for architecture discussion,
+implementation assistance, debugging, documentation, and code review.
+Final execution, artifact generation, validation, and submission
+preparation were performed locally.
 
 methodology_summary: |
   The pipeline performs candidate validation, feature generation, embedding
@@ -47,5 +49,5 @@ declarations:
   read_submission_spec: true
   code_is_original_work: true
   no_collusion: true
-  honeypot_check_done: true
+  honeypot_check_done: false
   reproduction_tested: true
