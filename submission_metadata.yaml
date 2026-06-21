@@ -12,7 +12,7 @@ team_members:
 
 github_repo: "https://github.com/1prinnce/redrob-ai-ranker"
 
-sandbox_link: "https://colab.research.google.com/drive/1LJ7c1xnAnSIotgHaqUJ6_boPJkTB6LAy?usp=sharing"
+sandbox_link: "https://colab.research.google.com/drive/1cOETTTnRNZbNKhj4aS_zp0dRcbxXjk-c?usp=sharing"
 
 reproduce_command: "python -m src.pipeline.rank --artifacts artifacts --jd dataset/job_description.docx --out outputs/submission.csv"
 
